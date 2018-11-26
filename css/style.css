@@ -1,234 +1,318 @@
-@font-face {
-    font-family: Roboto; /* Имя шрифта */
-    src: url(fonts/Roboto/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
 
+@font-face {
+    font-family: RobotoLight; /* Имя шрифта */
+    src: url(fonts/Roboto/Roboto-Light.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
     font-family: RobotoBold; /* Имя шрифта */
     src: url(fonts/Roboto/Roboto-Bold.ttf); /* Путь к файлу со шрифтом */
    }
 
-h1 {
-  font-family: Roboto, Arial;
+body {
+  margin: 10px 20px;
+  font-family: RobotoLight; /* Имя шрифта */
+  font-size: 20px;  
 }
 
-h2 {
-  font-family: Roboto, Arial;
-}
-
-.btn {
-  margin-left: 16px;
-
-}
-
-.lang-wrap {
-  margin: 10px auto;
-  width: 300px;
-}
-
-.lang-wrap a {
-  color: white;
+a {
+  color: #c3b091;
   text-decoration: none;
-  font-weight: 700;
 }
 
-
-.container-info {
-	padding-top: 10px;
-}
-
-.brd {
-  border: 1px solid red;
-}
-
-/*BORDER STYLE TO ALL BOXES*/
-
-.brd-style {
-  margin: 10px;
-  border-radius: 30px;
-  border: 1px solid #ccc;
-  overflow: hidden;
-}
-
-.wrapper-bio {
-
-}
-
-.photo {
- width: 200px;
-  height: 100%; 
-}
-
-.photo img {
-  width: 100%;
-  height: 100%;
-}
-
- .wrapper-name {
- 	padding: 20px 30px;
-}
-
-/* SOCIAL LINK ICON */
-
-.social-link-wrapper {
-  margin: 1rem 0.5rem; 
-}
-
-.soc-icon {
-  margin: 5px;
-  padding-top: 0px;
-  font-size: 33px !important;
-  font-family: RobotoBold;
-  width: 50px;
-  height: 50px;
-  color: #FFF !important;
-  border-radius: 25%;
-  background: #000;
-}
-
-
-.social-link-wrapper a {
-  text-decoration: none !important;
-  color: #FFF !important;
-
-}
-
-.soc-icon:hover {
-    opacity: 0.7;
-}
-
-/*CONTACT AREA*/
-
-.wrapper-contact {
-  
-}
-
-ul {
-  padding-left: 0;
+ul {  
+  margin-top: 0px;
+  padding-left: 20px;
 }
 
 li {
-  list-style-type: none;  
+  margin: 0;
+  padding: 0;
+  list-style-type: none; 
 }
 
-.container-skills-edu {
+.flex-conteiner {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/*SKILLS*/
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-container a :hover {
+  color: #000;
+  opacity: 0.3;
+}
+
+.btn {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 700;
+}
+
+.btn-container a {
+  text-decoration: none;
+}
+
+.btn-primary {
+  background: #c3b091;
+}
+
+.btn-secondary {
+  background: #dbc7a7;
+}
+
+/*новые стили flex*/
+
+.title-large {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: RobotoLight; 
+  font-size: 2.4rem;
+}
+
+.title-small {
+  margin-top: 10px;
+  font-family: RobotoLight;
+  font-size: 2.0rem;
+}
+
+
+.flex-border {
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.flex-item1 {
+  display: flex;
+  margin: 10px;
+  flex: 1 0 auto;
+}
+
+.flex-item2 {
+  display: flex;
+  margin: 10px;
+  flex: 2 0 auto;
+}
+
+.fio-wrapper {
+  display: flex;
+
+}
+
+.photo img{
+  display: flex;
+  max-width: 179px;
+}
+
+.name-wrapper {
+  margin-left: 20px;
+
+}
+
+.name-item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social-links-wrapper {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.social-links-wrapper a {
+  text-decoration: none;
+}
+
+.social-links-wrapper a:hover {
+  opacity: 0.5;
+}
+
+.social-item {
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-content: center;
+  font-size: 40px;
+  font-family: RobotoLight;
+  width: 48px;
+  height: 48px;
+  color: #FFF;
+  border-radius: 25%;
+  background: #c3b091;
+}
+
+.social-item img {
+  margin-top: 8px;
+  width: 33px;
+  height: 33px; 
+}
+
+
+.about-wrapper {
+  padding-left: 20px;
+}
+
+
+.about-wrapper a {
+   color: #735C5C;
+  font-weight: 700;
+}
 
 .skills-wrapper {
-  max-width: 50%
+  margin-left: 20px;
 }
 
-.skills-box {
+.languages-wrapper li {
+  padding-bottom: 10px;
+  font-size: 25px;
 }
 
-.skills-item {
+.skills-item-wrapper {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 530px;
+  flex-wrap: wrap;
+}
+
+.skills-item {  
   margin: 5px;
-  padding: 5px 15px;
-  color: #fff;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 25px;
   font-family: RobotoBold;
-  font-size: 23px;
-  border-radius: 10px;
-  background: #000;
+  color: #fff;  
+  background: #c3b091;
 }
 
 .education-wrapper {
-  width: 500px;
+  display: flex;
+  margin-top: 10px; 
+  margin-left: 20px;
+  flex-direction: column;
+  width: 600px;
+}
+
+.education-item {
+  display: flex;
+  margin-top: 10px;
+}
+
+.education-item span {
+  line-height: 1.5;
+
+}
+
+.speciality {
+  padding-top: 40px;
+  font-size: 20px;
+}
+
+.experience-wrapper {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.education-item a {
+  color: #735C5C;
+  font-weight: 700;
+}
+
+/*конец новых стилей flex*/
+
+
+@media (max-width: 1000px) {
+
+body {
+  margin: 10px 20px;
+  font-family: RobotoLight; /* Имя шрифта */
+  font-size: 35px;  
 }
 
 
-.years {
-  color: gray;  
+.flex-item1 {
+  min-width: 100%;
 }
 
-  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 1080px) {
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-    .photo {  
-    padding-top: 20px;
-    padding-left: 30px;
-  }
-
-   .photo img { 
-   width: 140px; 
-    border-radius: 10%;
-    overflow: hidden;
-
-  }
-  
-  .skills-wrapper {
-    max-width: 100% !important;
-  }
-  
-  .education-wrapper {
-    max-width: 100% !important;
-  }
-}  
-
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 777px) {
-  h1 {
-    font-size: 30px;
-  }
-
-  h2 {
-    font-size: 20px;
-  }
-
-    .photo {  
-    padding-top: 20px;
-    padding-left: 30px;
-  }
-
-   .photo img { 
-   width: 140px; 
-    border-radius: 10%;
-    overflow: hidden;
-
-  }
-  
-  .skills-wrapper {
-    max-width: 100% !important;
-  }
-  
-  .education-wrapper {
-    width: 100% !important;
-  }
+.flex-item2 {
+  min-width: 100%;
 }
 
-/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 600px) {
-  h1 {
-    font-size: 30px;
-  }
+.photo img{
+  display: flex;
+  max-width: 250px;
+}
 
-  h2 {
-    font-size: 20px;
-  }
+.title-large {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: RobotoLight; 
+  font-size: 3rem;
+}
 
-  .photo {  
-    padding-top: 20px;
-    padding-left: 30px;
-  }
+.title-small {
+  margin-top: 10px;
+  font-family: RobotoLight;
+  font-size: 2.5rem;
+}
 
-   .photo img { 
-   width: 140px; 
-    border-radius: 10%;
-    overflow: hidden;
+.social-item {
+  display: flex;
+  margin: 40px 10px 0px 10px;
+  justify-content: center;
+  align-content: center;
+  font-size: 65px;
+  font-family: RobotoLight;
+  width: 80px;
+  height: 80px;
+  color: #FFF;
+  border-radius: 25%;
+  background: #c3b091;
+}
 
-  }
-  
-  .skills-wrapper {
-    width: 100% !important;
-  }
-  
-  .education-wrapper {
-    width: 100% !important;
-  }
+.social-item img {
+  margin-top: 8px;
+  width: 65px;
+  height: 65px; 
+}
+
+.skills-item-wrapper {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+
+.skills-item {  
+  margin: 5px;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 50px;
+  font-family: RobotoBold;
+  color: #fff;  
+  background: #c3b091;
+}
+
+.languages-wrapper li{
+  font-size: 35px;
+}
+
 }

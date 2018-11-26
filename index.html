@@ -3,111 +3,89 @@
 <head>
 
   <!-- BOOTSTRAP   -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
 
   <!-- USER CSS -->
   <link rel="stylesheet" href="css/style.css">
 
-  <title>Aleksandr Babushkin - CV</title>
+  <title>Александр Бабушкин - CV</title>
 </head>
 <body>
 
-  <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div class="lang-wrap">
-            <button type="button" class="btn btn-primary btn-sm">
-              <a href="index.html">
-                <img src="img/russia.png" alt="" style="width: 30px; height: 20px;"> Русский
-              </a>
-            </button>
-            <button type="button" class="btn btn-secondary btn-sm">
-              <a href="en_.html">English  <img src="img/usa.png" alt="" style="width: 30px; height: 20px;">
-              </a>
-            </button>    
-          </div>
-        </div>
-      </div>
-    </div> 
-  </header>
-
-  <section>
-
-    <!-- PHOTO SOCIAL ABOUT CONTACT CONTAINER -->
-
-    <div class="container container-info">
+  <div class="btn-container">
+    <a href="index.html">
+    <div class="btn btn-primary">
+      Русский
+      <img src="img/russia.png" alt="" style="width: 30px; height: 20px;"> 
+    </div>
+    </a>
     
-    <!-- WRAPPER  -->  
-      <div class="d-flex flex-lg-row flex-sm-column justify-content-around">
-        
-        <div class="d-flex wrapper-bio brd-style">
+    <a href="en_.html">
+    <div class="btn btn-secondary">
+      <img src="img/usa.png" alt="" style="width: 30px; height: 20px;">
+      English
+    </div>
+    </a>
+  </div>
+  <!-- ВЕРСТКА НА ФЛЕКСАХ -->
+  <section>
+    
+    <div class="flex-conteiner"> <!--   ОСНОВНОЙ КОНТЕЙНЕР -->
 
+      <div class="flex-item1 flex-border"> <!--БЛОК О С ФОТКОЙ И  ИМЕНЕМ -->
+      
+        <div class="fio-wrapper">
           <div class="photo">
-            <img src="img/photo.jpeg" alt="Photo" h-100> <!-- Photo -->
+            <img src="img/photo.jpeg" alt="">
           </div>
-
-          <div class="d-flex flex-grow-1 flex-column wrapper-name">
-            
-            <div class="">
-              <h1>Александр Бабушкин</h1>
+          
+          <div class="name-wrapper">
+            <div class="name-item title-large">
+              Александр Бабушкин
+            </div>
+            <div class="name-item title-small">
+              Ruby/RoR-разработчик
             </div>
 
-            <div class="">
-              <h2>Ruby/RoR-разработчик</h2>
-            </div>
-
-            <div class="d-flex text-center social-link-wrapper">
-
-              <a href="https://www.facebook.com/babushkin72">
-                <div class="soc-icon">
-                  f
-                </div>
+            <div class="name-item social-links-wrapper">
+              <a href="https://www.facebook.com/babushkin72">  
+                <div class="social-item">f</div>
               </a>
               
               <a href="https://linkedin.com/in/avbabushkin">
-                <div class="soc-icon">
-                  in
-                </div>            
+                <div class="social-item">in</div>            
               </a>
               
               <a href="https://github.com/avbabushkin">
-                <div class="soc-icon">
-                  <img src="img/GitHub-Mark-Light-64px.png" width="33px" alt="">
+                <div class="social-item">
+                  <img src="img/GitHub-Mark-Light-64px.png"  alt="">
                 </div>
               </a>
-
-              <!-- Appear send mail form-->
-              <!-- <div class="soc-icon">
-                <a href="mailto:alexbub72@gmail.com">
-                  @  
-                </a>
-              </div> -->
-
-            </div>
+            </div>  
           </div>
+        
         </div>
 
-        
-        <!--BEGIN ABOUT ME CONTACT  -->
-        <div class="d-flex  flex-fill flex-column wrapper-contact brd-style p-3"> 
-          
-          <div class="">
-            <h3>О себе:</h3>
-            
+      </div><!--БЛОК О С ФОТКОЙ И  ИМЕНЕМ -->
+
+      <div class="flex-item2 flex-border"> <!--БЛОК О СЕБЕ -->
+        <div class="about-wrapper">
+            <div class="title-large">
+              О себе
+            </div>
             <ul>
               <li>
                 возраст: 28 
               </li>
               <li>
-                город: Москва
+                город: Москва, Железнодородный
               </li>
             </ul>
 
-          </div> 
-
           <div class="">
-            <h3>Контакты:</h3>
+            <div class="title-small">
+              Контакты:  
+            </div>
             
             <ul>
               <li>
@@ -116,159 +94,142 @@
               </li>
               <li>
                 телефон: 
-                <a href="tel:+79323268892">+79323268892
+                  <a href="tel:+79323268892">+79323268892
                 </a>
               </li>
             </ul>
 
           </div>
+        </div> 
+      </div><!--БЛОК О СЕБЕ -->
 
-        </div> <!-- END ABOUT ME CONTACT-->
-
-      </div>
-
-    </div>
-
-
-    <!-- SKILLS & EDUCATION CONTAINER -->
-
-    <div class="container container-skills-edu"> 
-      
-      <div class="d-flex flex-wrap flex-lg-row flex-sm-column flex-md-column"> <!-- SKILLS & EDUCATION -->
-
-        <div class="d-flex flex-column flex-fill skills-wrapper"><!-- SKILLS BOX START -->
-          
-          <div class="skills-box brd-style p-3"> <!-- BEGIN Skills wrap technology -->
+        <div class="flex-item1 flex-border">
+          <div class="skills-wrapper">
             
-            <div class="">
-              <h1>Навыки</h1>
-            </div>
-                         
-            <div class="d-flex flex-wrap text-center">
-              <div class="skills-item" style="background: #AD0505;">
-                Ruby
-              </div>
-              <div class="skills-item" style="background: #cc0000;">
-                Ruby on Rails
-              </div>
-              <div class="skills-item" style="background: #F14A29;">
-                HTML
-              </div>
-              <div class="skills-item" style="background: #005a9c;">
-                CSS
-              </div>
-              <div class="skills-item" style="background: #563d7c;">
-                Bootstrap
-              </div>
-              <div class="skills-item" style="background: #336791;">
-                PostgreSQL
-              </div>
-              <div class="skills-item" style="background: #ef391a;">
-                Git
-              </div>
+            <div class="title-large">
+              Навыки
             </div>
 
+            <div class="skills-item-wrapper">
+              
+              <div class="skills-item" >Ruby</div>
+              <div class="skills-item" >Ruby on Rails</div>
+              <div class="skills-item" >PostgreSQL</div>
+              <div class="skills-item" >HTML</div>
+              <div class="skills-item" >CSS</div>
+              <div class="skills-item" >Верстка</div>
+              <div class="skills-item" >FlexBox</div>
+              <div class="skills-item" >Git</div>
 
-          </div> <!-- END Skills wrap technology -->
 
-          <div class="skills-box brd-style p-3"> <!-- BEGIN Skills wrap technology -->
-            
-            <div class="">
-              <h2>Языки</h2>
             </div>
-            
-            <div class="d-flex flex-column"><!-- skills row2 -->
-             
-              <div class="d-flex flex-wrap">
-               <ul class="pl-3">
-                    <li>Русский - нэйтив</li>
-                    <li>English - чтение тех. документации</li>
-                    <li>Українська - базовые знания</li>
-                  </ul>
+
+            <div class="languages-wrapper">
+              <div class="title-small">
+                Языки
               </div>
 
-            </div>
+              <ul><br>
+                <li>Русский - родной</li>
+                <li>English - чтение тех. документации</li>
+              </ul>
 
-
-          </div>
-
-        </div> <!-- SKILLS BOX END -->
-
-        <div class="d-flex flex-fill education-wrapper brd-style p-3">
-
-          <div class="">
-            
-            <div class="">
-              <h2>Образование</h2>
-            </div>
-            
-            <div class="d-flex flex-column">
-                <div class="d-flex flex-row">
-                  <div class="pr-2 years">
-                    2007 2010 
-                  </div>
-                  <div class="text-justify">
-                    <ul>
-                      <li>УрТИСИ г. Екатеринбург</li>
-                      <li>специальность - программное обеспечение вычислительной техники и автоматизированных систем</li>
-                      <li>квалификация - техник</li>
-                    </ul>
-                  </div>
-                </div>
 
             </div>
-            <div class="d-flex flex-column">
-                <div class="d-flex flex-row">
-                  <div class="pr-2 years">
-                    2010 2014  
-                  </div>
-                  <div class="text-justify">
-                    <ul>
-                      <li>УрТИСИ г. Екатеринбург</li>
-                      <li>специальность - программное обеспечение вычислительной техники и автоматизированных систем</li>
-                      <li>квалификация - инженер</li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-            <div class="">
-              <h2>Доп. oбразование</h2>
-            </div>
-            
-            <div class="d-flex flex-column">
-                <div class="d-flex flex-row">
-                  <div class="pr-2 years">
-                    09.2017 <br>11.2017 
-                  </div>
-                  <div class="">
-                    <ul>
-                      <li>Интенсив по Ruby on Rails</li>
-                      <li><a href="https://goodprogrammer.ru/">Хороший программист</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-            </div>
-
-
             
           </div>
-
 
         </div>
+        
+        <div class="flex-item2 flex-border">
+          <div class="education-wrapper">
+            <div class="title-large">
+              Образование
+            </div>
+            <div class="education-item">
+              <div class="">
+                2007 2010
+              </div>
+              <div class="">
+                <ul>
+                  <li>УрТИСИ г. Екатеринбург</li>
+                  <li><span>специальность - программное обеспечение вычислительной техники и автоматизированных систем</span></li>
+                  <li><span>квалификация - техник</span></li>
+                  <li>Сайт: <a href="http://www.uisi.ru/">uisi.ru</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="education-item">
+              <div class="">
+                2010 2014
+              </div>
+              <div class="">
+                <ul>
+                  <li>УрТИСИ г. Екатеринбург</li>
+                  <li>специальность - программное обеспечение вычислительной техники и автоматизированных систем</span></li>
+                  <li><span>квалификация - инженер</span></li>
+                  <li>Сайт: <a href="http://www.uisi.ru/">uisi.ru</a></li>
+                </ul>
+              </div>
+            </div>
 
+            <div class="title-small">
+                Дополнительное образование
+            </div>
+
+            <div class="education-item">
+
+              <div class="">
+                2017
+              </div>
+              <div class="">
+                <ul>
+                  <li>Онлайн интенсив, Хороший программист</li>
+                  <li><a href="https://goodprogrammer.ru">goodprogrammer.ru</a></li>
+                  <li></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+       <!--  <div class="flex-item1 flex-border">
+          <div class="experience-wrapper">
+            <div class="title-large">
+              Проекты
+            </div>
+            <ul>
+              <li>Сайт для компации:</li>
+              <li>
+                 <a href="https://surguttehnika.herokuapp.com/">"СургутТехника"</a>                  
+              </li>
+            </ul>
+          </div>
+        </div>       
+        
+        <div class="flex-item2 flex-border">
+          <div class="experience-wrapper">
+            <div class="title-large">
+              Опыт работы
+            </div>
+            <ul>
+              <li>2012 - 2018</li>
+              <li>ОАО "РЖД"</li>
+              <li>должность - электромеханик</li>
+              <li>обязанности:</li>
+              <li>
+                <ol>
+                  - калибровка и ремонт измерительных приборов
+                </ol>
+            </li>
+            </ul>
+          </div>
+        </div> -->
       
-      </div> <!-- SKILLS & EDUCATION -->
-      
-    </div>
+    
+    </div> <!--КОНЕЦ КОНТЕЙНЕРА-->
 
- 
 
-  </section>
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+  </section><!-- ВЕРСТКА НА ФЛЕКС -->
 </body>
 </html>
