@@ -221,12 +221,24 @@ li {
 }
 
 .project-wrapper {
-  display: flex;
-  padding: 20px 0 0 20px;
-  flex-direction: column;
-  width: 90%;
+  margin: 10px;
+  padding: 20px;
+  width: 40%;
+  flex-shrink: 1;
 }
 
+.work-exp-wrapper {
+margin: 10px; 
+padding: 20px; 
+text-align: justify;  
+width: 45%;
+flex-grow: 1;
+}
+
+li.title-small {
+  font-size: 1.8rem;
+  color: red;
+}
 
 /*конец новых стилей flex*/
 
@@ -294,7 +306,6 @@ body {
   flex-wrap: wrap;
 }
 
-
 .skills-item {  
   margin: 5px;
   padding: 6px;
@@ -318,8 +329,16 @@ body {
 }
 
 .project-wrapper {
-  display: flex;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+}
 
+.work-exp-wrapper {
+margin: 10px; 
+padding: 20px; 
+width: 100%;
+text-align: justify; 
 }
 
 }
