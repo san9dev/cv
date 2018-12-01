@@ -19,8 +19,9 @@ body {
 }
 
 a {
-  color: #c3b091;
+  color: #735C5C;
   text-decoration: none;
+  font-weight: 700;
 }
 
 ul {  
@@ -34,6 +35,14 @@ li {
   list-style-type: none; 
 }
 
+
+.title-project {
+  margin-bottom: 10px;
+  font-size: 110%;
+  font-weight: 700;
+
+}
+
 .flex-conteiner {
   display: flex;
   flex-wrap: wrap;
@@ -41,7 +50,7 @@ li {
 
 
 .btn-container {
-  display: flex;
+  display: flex; 
   justify-content: center;
 }
 
@@ -133,10 +142,6 @@ li {
   justify-content: center;
 }
 
-.social-links-wrapper a {
-  text-decoration: none;
-}
-
 .social-links-wrapper a:hover {
   opacity: 0.5;
 }
@@ -164,12 +169,6 @@ li {
 
 .about-wrapper {
   padding-left: 20px;
-}
-
-
-.about-wrapper a {
-   color: #735C5C;
-  font-weight: 700;
 }
 
 .skills-wrapper {
@@ -222,17 +221,11 @@ li {
   font-size: 20px;
 }
 
-.experience-wrapper {
-  display: block;
-  margin-top: 10px;
-  margin-left: 20px;
-  width: 100%;
+.project-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.education-item a {
-  color: #735C5C;
-  font-weight: 700;
-}
 
 /*конец новых стилей flex*/
 
@@ -313,6 +306,18 @@ body {
 
 .languages-wrapper li{
   font-size: 35px;
+}
+
+.education-wrapper {
+  display: flex;
+  margin-top: 10px; 
+  margin-left: 20px;
+  flex-direction: column;
+  width: 1000px;
+}
+
+.project-wrapper {
+  display: flex;
 }
 
 }
