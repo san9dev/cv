@@ -1,44 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+
+<html lang="ru">
 <head>
-
-<!-- BOOTSTRAP   -->
-<!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-
+  <meta charset="utf-8">
   <!-- USER CSS -->
   <link rel="stylesheet" href="css/style.css">
-
   <title>Александр Бабушкин - CV</title>
 </head>
 <body>
-
-  <div class="btn-container">
-    <a href="index.html">
-    <div class="btn btn-primary">
-      Русский
-      <img src="img/russia.png" alt="" style="width: 30px; height: 20px;"> 
-    </div>
-    </a>
-    
-    <a href="en_.html">
-    <div class="btn btn-secondary">
-      <img src="img/usa.png" alt="" style="width: 30px; height: 20px;">
-      English
-    </div>
-    </a>
-  </div>
-  <!-- ВЕРСТКА НА ФЛЕКСАХ -->
-  <section>
-    
-    <div class="flex-conteiner flex-border"> <!--   ОСНОВНОЙ КОНТЕЙНЕР -->
-
+  <section>    
+    <div class="btn-container"><!-- LANG BTN -->
+      <a href="index.html">
+        <div class="btn btn-primary">Русский</div>
+      </a>
+      <a href="en_.html">
+        <div class="btn btn-secondary">English</div>
+      </a>
+    </div><!-- LANG BTN END -->
+    <div class="flex-conteiner"> <!--   ОСНОВНОЙ КОНТЕЙНЕР -->
       <div class="flex-item1 flex-border"> <!--БЛОК О С ФОТКОЙ И  ИМЕНЕМ -->
-      
         <div class="fio-wrapper">
           <div class="photo">
             <img src="img/photo.jpeg" alt="">
           </div>
-          
           <div class="name-wrapper">
             <div class="name-item title-large">
               Александр Бабушкин
@@ -46,16 +30,13 @@
             <div class="name-item title-small">
               Ruby/RoR-разработчик
             </div>
-
             <div class="name-item social-links-wrapper">
               <a href="https://www.facebook.com/babushkin72">  
                 <div class="social-item">f</div>
               </a>
-              
               <a href="https://linkedin.com/in/avbabushkin">
                 <div class="social-item">in</div>            
               </a>
-              
               <a href="https://github.com/avbabushkin">
                 <div class="social-item">
                   <img src="img/GitHub-Mark-Light-64px.png"  alt="">
@@ -63,11 +44,8 @@
               </a>
             </div>  
           </div>
-        
         </div>
-
       </div><!--БЛОК О С ФОТКОЙ И  ИМЕНЕМ -->
-
       <div class="flex-item2 flex-border"> <!--БЛОК О СЕБЕ -->
         <div class="about-wrapper">
             <div class="title-large">
@@ -81,147 +59,149 @@
                 город: Москва, Железнодородный
               </li>
             </ul>
-
           <div class="">
-            <div class="title-small">
-              Контакты:  
-            </div>
-            
+            <div class="title-small">Контакты:</div>
             <ul>
-              <li>
-                e-mail: 
-                <a href="mailto:alexbub72@dmail.com">alexbub72@gmail.com</a> 
-              </li>
-              <li>
+              <li>e-mail: <a href="mailto:alexbub72@dmail.com">alexbub72@gmail.com</a> </li>
+              <li>  
                 телефон: 
                   <a href="tel:+79323268892">+79323268892
                 </a>
               </li>
             </ul>
-
           </div>
         </div> 
       </div><!--БЛОК О СЕБЕ -->
-
-        <div class="flex-item1 flex-border">
-          <div class="skills-wrapper">
-            
-            <div class="title-large">
-              Навыки
-            </div>
-
-            <div class="skills-item-wrapper">
-              
-              <div class="skills-item" >Ruby</div>
-              <div class="skills-item" >Ruby on Rails</div>
-              <div class="skills-item" >PostgreSQL</div>
-              <div class="skills-item" >HTML</div>
-              <div class="skills-item" >CSS</div>
-              <div class="skills-item" >Верстка</div>
-              <div class="skills-item" >FlexBox</div>
-              <div class="skills-item" >Git</div>
-
-
-            </div>
-
-            <div class="languages-wrapper">
-              <div class="title-small">
-                Языки
-              </div>
-
-              <ul><br>
-                <li>Русский - родной</li>
-                <li>English - чтение тех. документации</li>
-              </ul>
-
-
-            </div>
-            
+      <div class="flex-item1 flex-border">  <!-- БЛОК НАВЫКИ -->
+        <div class="skills-wrapper">
+          <div class="title-large">
+            Навыки
           </div>
-
-        </div>
-        
-        <div class="flex-item2 flex-border">
-          <div class="education-wrapper">
-            <div class="title-large">
-              Образование
-            </div>
-            <div class="education-item">
-              <div class="">
-                2007 2010
-              </div>
-              <div class="">
-                <ul>
-                  <li>УрТИСИ г. Екатеринбург</li>
-                  <li><span>специальность - программное обеспечение вычислительной техники и автоматизированных систем</span></li>
-                  <li><span>квалификация - техник</span></li>
-                  <li>Сайт: <a href="http://www.uisi.ru/">uisi.ru</a></li>
-                </ul>
-              </div>
-            </div>
-            <div class="education-item">
-              <div class="">
-                2010 2014
-              </div>
-              <div class="">
-                <ul>
-                  <li>УрТИСИ г. Екатеринбург</li>
-                  <li>специальность - программное обеспечение вычислительной техники и автоматизированных систем</span></li>
-                  <li><span>квалификация - инженер</span></li>
-                  <li>Сайт: <a href="http://www.uisi.ru/">uisi.ru</a></li>
-                </ul>
-              </div>
-            </div>
-
+          <div class="skills-item-wrapper">
+            <div class="skills-item" >Ruby</div>
+            <div class="skills-item" >Ruby on Rails</div>
+            <div class="skills-item" >PostgreSQL</div>
+            <div class="skills-item" >HTML</div>
+            <div class="skills-item" >CSS</div>
+            <div class="skills-item" >Верстка</div>
+            <div class="skills-item" >FlexBox</div>
+            <div class="skills-item" >Git</div>
+          </div>
+          <div class="languages-wrapper">
             <div class="title-small">
-                Дополнительное образование
+              Языки
             </div>
-
-            <div class="education-item">
-
-              <div class="">
-                2017
-              </div>
-              <div class="">
-                <ul>
-                  <li>Онлайн интенсив, Хороший программист</li>
-                  <li><a href="https://goodprogrammer.ru">goodprogrammer.ru</a></li>
-                  <li></li>
-                </ul>
-              </div>
+            <ul>
+              <li>Русский - родной</li>
+              <li>English - чтение тех. документации</li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- БЛОК НАВЫКИ КОНЕЦ-->
+      <div class="flex-item2 flex-border"> <!-- БЛОК ОБРАЗОВАНИЕ -->
+        <div class="education-wrapper">
+          <div class="title-large">Образование</div>
+          <div class="education-item">
+            <div class="">2007 2010</div>
+            <div>
+              <ul>
+                <li>УрТИСИ г. Екатеринбург</li>
+                <li>специальность - программное обеспечение вычислительной техники и автоматизированных систем</li>
+                <li>квалификация - техник</li>
+                <li>Сайт: <a href="http://www.uisi.ru/">uisi.ru</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="education-item">
+            <div>2010 2014</div>
+            <div>
+              <ul>
+                <li>УрТИСИ г. Екатеринбург</li>
+                <li>специальность - программное обеспечение вычислительной техники и автоматизированных систем</li>
+                <li>квалификация - инженер</li>
+                <li>Сайт:<a href="http://www.uisi.ru/">uisi.ru</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="title-small">Дополнительное образование</div>
+          <div class="education-item">
+            <div>2017</div>
+            <div>
+              <ul>
+                <li>Онлайн интенсив, Хороший программист</li>
+                <li><a href="https://goodprogrammer.ru">goodprogrammer.ru</a></li>
+              </ul>
             </div>
           </div>
         </div>
-
-    <div class="projecrt-wrapper flex-border" ">
-    <div class="title-large" style="text-align: center;">
-      Проекты
-    </div>
-    <br>
-    
-      <ul>
-        <li class="title-project">Сайт для компании "СургутТехника"</li>
-        <li>Ссылка: <a href="https://avbabushkin.github.io/surguttehnika/">
-            github/surguttehnika
-        </a></li>
-        <li>Реализованые задачи:</li>
-            <ol>- сайт информационного характера, задачей которого является ознакомление клиентов с основными услугами компании;</ol>
-      </ul>
-      <ul>
-        <li class="title-project">Сайт для компании "dmkservice"</li>
-        <li>Ссылка: <a href="">dmkservice.ru</a> (R.I.P.)</li>
-        <li>Реализованые задачи:</li>
-            <ol>- написан сайт для сервиса заправки картриджей;</ol>
-            <ol>- продвижение в ТОП выдачи по запросу "заправка картриджей в Демьянке"</ol>
-      </ul>
-    </div>
-
-    </div>
-      
-    
+      </div> <!-- БЛОК ОБРАЗОВАНИЕ -->
+      <div class="project-wrapper flex-item1 flex-border" style="text-align: justify;"> <!-- БЛОК ПРОЕКТЫ -->
+        <div class="title-large">Проекты</div>      
+        <ul>
+          <li class="title-project">Сайт для компании "СургутТехника"</li>
+          <li>Ссылка: <a href="https://avbabushkin.github.io/surguttehnika/">github/surguttehnika</a></li>
+          <li>Реализованые задачи:</li>
+          <ol>
+            <li>- сайт информационного характера, задачей которого является ознакомление клиентов с основными услугами компании;</li>
+          </ol>
+        </ul>
+        <ul>
+          <li class="title-project">Сайт для компании "dmkservice"</li>
+          <li>Ссылка: <a href="">dmkservice.ru</a> (R.I.P.)</li>
+          <li>Реализованые задачи:</li>
+          <ol>
+            <li>- написан сайт для сервиса заправки картриджей;</li>
+            <li>- продвижение в ТОП выдачи Яндекс/Google по запросу "заправка картриджей в Демьянке".</li>
+          </ol>
+        </ul>
+      </div> <!-- БЛОК ПРОЕКТЫ КОНЕЦ-->
     </div> <!--КОНЕЦ КОНТЕЙНЕРА-->
-
-
-  </section><!-- ВЕРСТКА НА ФЛЕКС -->
+    <div class="flex-border" style="text-align: justify; padding: 20px;"> <!-- БЛОК ОПЫТ РАБОТЫ-->
+      <div class="title-large">Опыт работы</div>
+        <div class="" style="display: flex; flex-direction: row;">
+          <div>
+            <ul>
+              <li class="title-small">ОАО "РЖД" (2013 - 2018)</li>
+              <p style="border-bottom: 1px solid #ccc; margin-bottom: 2px;"></p>
+              <li><strong>Свердловский центр метрологии</strong></li>
+              <li><strong>Должность:</strong> электромеханик по калибровке и ремонту средств измерений</li>
+              <li style="border-bottom: 1px solid #ccc;"></li>
+              <li><strong>Обязанности: </strong></li>
+              <li style="border-bottom: 1px solid #ccc;"></li>
+              <ul>
+                <li>- калибровка и ремонт средств измерений электрических величин;</li>
+                <li>- калибровка и ремонт средств измерений геометрических величин;</li>
+                <li>- учет и регистрация данных об МО (метрологическом обслуживании) средств измерений.</li>
+              </ul>
+              <li><strong>Достижения:</strong></li>
+              <li style="border-bottom: 1px solid #ccc;"></li>
+              <ul>
+                <li>Написал “десктоп-приложение” для учета МО средств измерений (Delphi 2010);</li>
+                <li>Организовал сервис заправки картриджей на предприятии.</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+        <p></p>
+        <div class="" style="display: flex; flex-direction: row;">
+          <div>
+            <ul>
+              <li class="title-small">ОАО "РЖД" (2012 2013)</li>
+              <p style="border-bottom: 1px solid #ccc; margin-bottom: 2px;"></p>
+              <li><strong>Свердловск-Сортировочная дистанция СЦБ</strong></li>
+              <li><strong>Должность:</strong>  электромехник КТСМ (комплекс технических средств многофункциональный)</li>
+              <li style="border-bottom: 1px solid #ccc;"></li>
+              <li><strong>Обязанности: </strong></li>
+              <li style="border-bottom: 1px solid #ccc;"></li>
+              <ul>
+                <li>- обслуживание оборудования КТСМ;</li>
+                <li>- поддержка работоспособности ПО;</li>
+                <li>- замена и ремонт отдельных узлов комплекса</li>
+              </ul>
+            </ul>
+          </div>            
+        </div>     
+    </div> <!-- БЛОК ОПЫТ РАБОТЫ КОНЕЦ-->
+  </section>
 </body>
 </html>
