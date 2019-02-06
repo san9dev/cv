@@ -1,36 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
 <head>
-  <!-- Bootstrap   -->
-  <!--   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> -->
-  <!-- Custom CSS -->
+  <meta charset="utf-8">
+  <!-- custom css -->
   <link rel="stylesheet" href="css/style.css">
-  <title>Aleksandr Babushkin - CV</title>
+  <title>Александр Бабушкин - CV</title>
 </head>
 <body>
-  <section>
-    <ul class="btn-container"> <!-- lang choice btn start -->
-      <li>
-        <a href="index.html" class="btn btn-primary">Русский</a>
-      </li>
-      <li>
-        <a href="en_.html" class="btn btn-secondary">English</a>
-      </li>
-    </ul><!-- lang choice btn end -->
-    <div class="flex-container"> <!--   main container-->
-      <div class="flex-item1 flex-border"> <!--БЛОК О С ФОТКОЙ И  ИМЕНЕМ -->
+  <section>    
+    <ul class="btn-container"><!-- lang bth begin -->
+      <li><a href="index.html" class="btn btn-secondary">Русский</a></li>
+      <li><a href="en_.html" class="btn btn-primary">English</a></li>
+    </ul><!-- lang btn end -->    
+    <div class="wrapper-test"><!-- start wrapper -->
+      <div class="item-test flex-border"> <!-- foto name social block begin-->
         <div class="fio-wrapper">
           <div class="photo">
             <img src="img/photo.jpeg" alt="">
           </div>
-          <div class="name-wrapper">
-            <div class="name-item title-large">
-              Aleksandr Babushkin
-            </div>
-            <div class="name-item title-small">
-              Ruby/RoR-developer
-            </div>
-            <div class="name-item social-links-wrapper">
+          <div class="wrapper-name">
+            <ul>
+              <li><h1 class="title-large">Aleksandr Babushkin</h1></li>
+              <li><h2 class="title-small">Ruby/RoR-developer</h2></li>
+            </ul>
+            <div class="social-links-wrapper">
               <a href="https://www.facebook.com/babushkin72">  
                 <div class="social-item">f</div>
               </a>
@@ -39,100 +33,122 @@
               </a>
               <a href="https://github.com/avbabushkin">
                 <div class="social-item">
-                  <img src="img/GitHub-Mark-Light-64px.png" width="33px" height="33px" style="margin-top: 8px;" alt="">
+                  <img src="img/GitHub-Mark-Light-64px.png"  alt="">
                 </div>
               </a>
             </div>  
           </div>
-        
         </div>
-
-      </div><!--БЛОК О С ФОТКОЙ И  ИМЕНЕМ -->
-
-      <div class="flex-item2 flex-border"> <!--БЛОК О СЕБЕ -->
+      </div><!--foto name social block end -->
+      <div class="item-test flex-border"> <!-- about me block begin -->
         <div class="about-wrapper">
-          <div class="title-large"> About me </div>
-          <ul>
-            <li>age: 28</li>
-            <li>city: Moscow</li>
-          </ul>
-          <div class="">
-            <div class="title-small">Contact</div>
+          <div>
+            <h2 class="title-small">About me</h2>
             <ul>
-              <li>e-mail:<a href="mailto:alexbub72@dmail.com">alexbub72@gmail.com</a></li>
+              <li>age: 28</li>
+              <li>city: Moscow</li>
+            </ul>
+          </div>
+          <div class="">
+            <div class="title-small">Contacts:</div>
+            <ul>
+              <li>e-mail: <a href="mailto:alexbub72@dmail.com">alexbub72@gmail.com</a> </li>
               <li>phone:<a href="tel:+79323268892">+79323268892</a></li>
+              <li>Ссылка: <a href="https://avbabushkin.github.io/surguttehnika/">github/surguttehnika</a></li>
             </ul>
           </div>
         </div> 
-      </div><!--БЛОК О СЕБЕ КОНЕЦ-->
+      </div><!-- About me block end -->
+    </div>
+    <div class="wrapper-test"><!-- next wrapper -->
 
-      <div class="flex-item1 flex-border"><!-- SKILLS -->
+      <div class="item-test flex-border"><!-- skills block begin -->
         <div class="skills-wrapper">
-          <div class="title-large">Skills</div>
+          <h2 class="title-large">Skills</h2>
           <div class="skills-item-wrapper">
-            <div class="skills-item">Ruby</div>
-            <div class="skills-item">Ruby on Rails</div>
-            <div class="skills-item">PostgreSQL</div>
-            <div class="skills-item">HTML</div>
-            <div class="skills-item">CSS</div>
-            <div class="skills-item">Верстка</div>
-            <div class="skills-item">FlexBox</div>
-            <div class="skills-item">Git</div>
+            <div class="skills-item" >Ruby</div>
+            <div class="skills-item" >Ruby on Rails</div>
+            <div class="skills-item" >RSpec</div>
+            <div class="skills-item" >PostgreSQL</div>
+            <div class="skills-item" >Redis</div>
+            <div class="skills-item" >HTML</div>
+            <div class="skills-item" >CSS</div>
+            <div class="skills-item" >Верстка (Grid, FlexBox)</div>
+            <div class="skills-item" >Git</div>
+            <div class="skills-item" >Ubuntu</div>
           </div>
           <div class="languages-wrapper">
-            <div class="title-small">
-              Languages
-            </div>
+            <h2>Languages</h2>
             <ul>
               <li>Russian - native</li>
-              <li>English - reading technical documentation</li>
+              <li>English -  Intermediate</li>
             </ul>
           </div>
         </div>
-      </div><!-- SKILLS END-->
-      
-      <div class="flex-item2 flex-border"><!-- EDUCATION WRAPPER -->
+      </div><!-- skills block end -->
+       <div class="item-test flex-border project-wrapper"> <!-- badprojects begin -->
+        <h2 class="title-large">Projects</h2>  
+        <ul>
+          <li class="title-project">Site "SurgutTekhika"</li>
+          <li>link: <a href="https://avbabushkin.github.io/surguttehnika/">github/surguttehnika</a></li>
+        </ul>
+        <ul>
+          <li class="title-project">Site for service "dmkservice" - repair toner cartrige</li>
+          <li>link: <a href="">dmkservice.ru</a> (R.I.P.)</li>
+        </ul>
+      </div><!-- bagprojects bloock-->
+    </div>
+    <div class="wrapper-test"><!-- next wrapper -->
+     
+      <div class="item-test flex-border work-exp-wrapper" ><!-- job experience block begin -->
+        <h2 class="title-large">Experience</h2>
+        <ul>
+          <li class="title-small">OAO "RZD" (2013 - 2018)</li>
+          <!--  <li><strong>Свердловский центр метрологии</strong></li> -->
+          <li style="border-bottom: 1px solid #ccc;"></li>
+          <li><strong>position:</strong> electrical enginer</li>
+        </ul>
+        <ul>
+          <li class="title-small">ОАО "RZD" (2012 - 2013)</li>
+          <!-- <li><strong>Свердловск-Сортировочная дистанция СЦБ</strong></li> -->
+          <p style="border-bottom: 1px solid #ccc; margin-bottom: 2px;"></p>
+          <li><strong>position:</strong> service engineer</li>
+        </ul>            
+      </div><!-- job experience end-->
+      <div class="item-test flex-border"><!-- education block begin -->
         <div class="education-wrapper">
-          <div class="title-large">Education</div>
-          
+          <h2 class="title-large">Education</h2>
           <div class="education-item">
-            <div>2007 2010</div>
+            <div>2014</div>
             <div>
               <ul>
-                <li>Ural Technical Institute of Communications and Informatics</li>
-                <li>specialty - software and automated system</li>
+                <li>Ekaterinburg city</li>
+                <li>SIBERIAN STATE UNIVERSITY OF TELECOMMUNICATIONS AND INFORMATION SCIENCES</li>
+                <li>specialty - computer software and automated systems</li>
+                <li>qualification - software engineer</li>
+                <li>Сайт:<a href="http://www.uisi.ru/">uisi.ru</a></li>
               </ul>
             </div>
           </div>
-
+          <div class="title-small">additional education</div>
           <div class="education-item">
-            <div>2010 2014</div>
+            <div>2017</div>
             <div>
               <ul>
-                <li>Ural Technical Institute of Communications and Informatics</li>
-                <li>specialty - software and automated system</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="title-small">Additional education</div>
-
-          <div class="education-item">
-            <div class="">
-              2017
-            </div>
-            <div class="">
-              <ul>
-                <li>Ruby on Rails</li>
+                <li>Online course, Ruby on Rails, "Good programmer"</li>
                 <li><a href="https://goodprogrammer.ru">goodprogrammer.ru</a></li>
-                <li></li>
               </ul>
             </div>
           </div>
-
         </div>
-      </div>   
-    </div> <!--КОНЕЦ КОНТЕЙНЕРА-->
-  </section><!-- ВЕРСТКА НА ФЛЕКС -->
+      </div> <!-- education block end-->
+    </div> 
+    <div class="wrapper-test"><!-- next wrapper -->
+      <div class="item-test flex-border work-exp-wrapper" ><!-- job experience block begin -->
+        <h2 class="title-large">Common</h2>
+      
+      </div> <!-- education block end-->
+    </div> 
+  </section>
 </body>
 </html>
