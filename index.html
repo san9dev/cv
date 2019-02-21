@@ -14,14 +14,12 @@
       <li><a href="en_.html" class="btn btn-secondary">English</a></li>
     </ul><!-- lang btn end -->    
     <div class="wrapper-test"><!-- start wrapper -->
-      <div class="item-test flex-border"> <!-- foto name social block begin-->
+      <div class="item-test-first flex-border"> <!-- foto name social block begin-->
         <div class="fio-wrapper">
-          <div class="photo">
-            <img src="img/photo.jpeg" alt="">
-          </div>
+          <img src="img/photo.jpeg" alt="" class="photo">
           <div class="wrapper-name">
             <ul>
-              <li><h1 class="title-large">Александр Бабушкин</h1></li>
+              <li><h1 class="title-large-first">Александр Бабушкин</h1></li>
               <li><h2 class="title-small">Ruby/RoR - developer</h2></li>
             </ul>
             <div class="social-links-wrapper">
@@ -43,7 +41,7 @@
       <div class="item-test flex-border"> <!-- about me block begin -->
         <div class="about-wrapper">
           <div>
-            <h2 class="title-small">О себе</h2>
+            <h1 class="title-large">О себе</h2>
             <ul>
               <li>возраст: 28</li>
               <li>город: Москва, Железнодородный</li>
@@ -54,7 +52,7 @@
             <ul>
               <li>e-mail: <a href="mailto:alexbub72@dmail.com">alexbub72@gmail.com</a> </li>
               <li>телефон: <a href="tel:+79323268892">+79323268892</a></li>
-              <li>telegram:<a href="https://t.me/avbabushkin">@avbabushkin</a></li>
+              <li>telegram: <a href="https://t.me/avbabushkin">@avbabushkin</a></li>
             </ul>
           </div>
         </div> 
@@ -75,12 +73,13 @@
             <div class="skills-item" >SLIM</div>
             <div class="skills-item" >CSS</div>
             <div class="skills-item" >SASS</div>
-            <div class="skills-item" >Верстка (Grid, FlexBox)</div>
+            <div class="skills-item" >Grid</div>
+            <div class="skills-item" >FlexBox</div>
             <div class="skills-item" >Git</div>
             <div class="skills-item" >Ubuntu</div>
           </div>
           <div class="languages-wrapper">
-            <h2 class="title-large">Языки</h2>
+            <h2 class="title-small">Языки</h2>
             <ul>
               <li>Русский - родной</li>
               <li>English - чтение тех. документации</li>
@@ -91,16 +90,19 @@
        <div class="item-test flex-border project-wrapper"> <!-- badprojects begin -->
         <h2 class="title-large">Проекты</h2>  
         <ul>
-          <li class="title-project">Сайт для компании "STEH"</li>
-          <li>Ссылка: <a href="https://github.com/avbabushkin/steh">STEH</a></li>
-          <li>Текущий проект, над которым работаю.</li>
+          <li class="title-project">Сайт для компании по аренде спецтехники</li>
+          <li>Первая версия (HTML/CSS): 
+          <a href="https://avbabushkin.github.io/surguttehnika/"> СургутТехника</a></li>
+          <li>Вторая версия, над которой работаю сейчас:
+          <a href="https://github.com/avbabushkin/steh"> СургутТехника - STEH</a></li>
+          <li>Переписываю данный (pet) проект на Rails + React в учебных целях</li>
         </ul>
         <ul>
-          <li class="title-project">Сайт для компании "dmkservice"</li>
-          <li>Ссылка: <a href="">dmkservice.ru</a> (R.I.P.)</li>
+          <li class="title-project">Сайт для сервиса заправки картриджей</li>
+          <li>Ссылка: <a href="">dmkservice.ru</a> (R.I.P. - сервис прекратил деятельность)</li>
           <li>Реализованые задачи:</li>
           <ul>
-            <li>- написан сайт для сервиса заправки картриджей;</li>
+            <li>- сайт для сервиса заправки картриджей (HTML/CSS/PHP);</li>
             <li>- продвижение в ТОП выдачи Яндекс/Google по запросу "заправка картриджей в Демьянке".</li>
           </ul>
         </ul>
@@ -157,7 +159,7 @@
               </ul>
             </div>
           </div>
-          <div class="title-small">Дополнительное образование</div>
+          <h2 class="title-small">Дополнительное образование</h2>
           <div class="education-item">
             <div>2017</div>
             <div>
@@ -172,26 +174,26 @@
     </div>
     <div class="wrapper-test"><!-- next wrapper -->
       <div class="item-test flex-border work-exp-wrapper" >
-        <h2 class="title-large">Дополнительно</h2>
+        <h1 class="title-large">Дополнительно</h1>
         <div>
-          <h3>Еще немного о себе:</h3>
+          <h2 class="title-small">Еще немного о себе:</h2>
           <ul>
-            <li>Не курю, но вам ничего советовать не стану</li>
-            <li>Отношение к алкоголю: нейтральное</li>
+            <li>Люблю все, что (прямно или косвенно) связяно с технологиями от пайки SMD до Brainfuck programming</li>
             <li>Увлекаюсь баскетболом играл в любительской команде, есть опыт участия в соревнованиях</li>
+            <li>Отношение к алкоголю/курению: нейтральное</li>
           </ul>
           
-          <h3>Книги:</h3>
+          <h2 class="title-small">Книги:</h2>
           <ul>
-            <li>Хел Фултон - Программирование на языке Ruby</li>
-            <li>Ruby on Rails Tutorial - by Michael Hartl</li>
-            <li>Стив Макконнелл - Совершенный код</li>
-            <li>Гради Буч - Обьектно ориентированный анализ и проектирование</li>
-            <li>Alan Beaulie - Learning SQL</li>
+            <li>Хел Фултон - Программирование на языке Ruby (complete 50%)</li>
+            <li>Ruby on Rails Tutorial - by Michael Hartl (complete 60%)</li>
+            <li>Гради Буч - Обьектно ориентированный анализ и проектирование (в процессе)</li>
+            <li>Стив Макконнелл - Совершенный код (в процессе)</li>
+            <li>Alan Beaulie - Learning SQL (в процессе)</li>
           </ul>          
         </div>
         <div>
-          <h3>Технологии в процессе изучения:</h3>
+          <h2 class="title-small">Технологии в процессе изучения:</h2>
           <ul>
             <li>JavaScript - знать два скриптовых языка лучше чем один :)</li>
             <li>React - наверное стоило указать через запятую в пункте выше</li>
