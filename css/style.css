@@ -48,6 +48,7 @@ h2 {
 /*Button style*/
 
 .btn-container {
+  margin-top: -20px;
   display: flex; 
   justify-content: center;
 }
@@ -73,10 +74,12 @@ h2 {
 }
 
 .btn-primary {
+  position: relative;
   background: #c3b091; 
 }
 
 .btn-secondary {
+  position: relative;
   background: #ccc;
 }
 
@@ -122,7 +125,7 @@ h2 {
 }
 
 .photo {
-  height: 232px; 
+  height: 260px; 
 }
 
 .wrapper-name {
