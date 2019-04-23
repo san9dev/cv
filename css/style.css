@@ -41,6 +41,7 @@ h1 {
 }
 
 h2 {
+  margin-bottom: 5px;
   font-size: 30px;
   font-weight: 700;
 }
@@ -94,7 +95,7 @@ h2 {
 
 /*test block*/
 
-.wrapper-test {
+.wrapper-row-section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -216,6 +217,11 @@ h2 {
 .project-wrapper {
   width: 40%;
   flex-direction: column;
+}
+
+.project-wrapper a {
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 /*work expirience block*/
