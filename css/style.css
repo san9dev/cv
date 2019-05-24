@@ -37,13 +37,13 @@ strong {
 
 h1 {
   font-size: 45px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 h2 {
   margin-bottom: 5px;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 /*Button style*/
@@ -91,9 +91,7 @@ h2 {
 
 }
 
-/*New flex*/
-
-/*test block*/
+/* block */
 
 .wrapper-row-section {
   display: flex;
@@ -115,18 +113,18 @@ h2 {
 }
 
 .flex-border {
-  border: 1px solid #c3b091;
+  border: 0px solid #c3b091;
   border-radius: 10px;
   overflow: hidden;
 }
 
 .fio-wrapper {
   display: flex;
-
 }
 
 .photo {
-  height: 270px; 
+  height: 120px;
+  border-radius: 50%; 
 }
 
 .wrapper-name {
