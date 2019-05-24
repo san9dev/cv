@@ -11,12 +11,13 @@
 body {
   font-size: 18px; 
   line-height: 1.5; 
-  color: #1E253A;
+  color: #484848;
+  background-color:  #f6f5ed;
 }
 
 a {
   text-decoration: none;
-  color: #7495F7;
+  color: #C30C0C;
 }
 
 ul {  
@@ -34,47 +35,40 @@ strong {
 }
 
 h1 {
-  font-size: 45px;
+  font-size: 32px;
   font-weight: 500;
 }
 
 h2 {
   margin-bottom: 5px;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 500;
+  /*border-bottom: 1px solid #484848;*/
 }
 
 /*Button style*/
-
 .btn-wrapper {
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flex;
-  display: -o-flex;
   display: flex;
   justify-content: center;
 }
 
 .btn {
-  margin-right: 10px;
-  margin-top: -5px;
-  padding: 5px;
+  margin: -10px 3px 3px 3px;
+  padding: 10px 0px 5px 0px;
+  border: 1px solid #484848;
+  border-radius: 10px;
+  width: 100px;
+  background-color: #f6f5ed; 
   text-align: center;
-  border: 1px solid #1E253A;
-  border-radius: 5px;
-  color: #1E253A;
-  font-weight: 700;
+  transition: background-color 0.2s;
 }
 
-.btn-primary {
-  position: relative;
-  background: #1E253A;
-  color: #fff; 
+.btn:hover {
+  background-color: #484848; 
 }
 
-.btn-secondary {
-  position: relative;
-  background: #fff;
+.btn a {
+  color: #C30C0C;
 }
 
 .title-project {
@@ -87,7 +81,7 @@ h2 {
 /* main container */
 
 .container {
-  margin: 0 auto;
+  margin: auto;
   width: 65%;
 }
 
@@ -147,12 +141,6 @@ h2 {
   height: 33px; 
 }
 
-.about-wrapper {
-}
-
-.about-wrapper ul {
-  margin-bottom: 0px, !important;
-}
 
 .skills-wrapper {
   display: flex;
@@ -168,23 +156,8 @@ h2 {
   font-size: 14px;
 }
 
-.education-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 500px;
-}
-
-.education-item {
-  display: flex;
-}
-
-.education-item span {
-  line-height: 1.5;
-}
-
-.speciality {
-  padding-top: 40px;
-  font-size: 20px;
+.edu-describe p {
+  font-size: 14px;
 }
 
 /*badprojects block*/
