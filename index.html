@@ -1,27 +1,28 @@
 <!doctype html>
 
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <!-- custom css -->
   <link rel="stylesheet" href="css/style.css">
-
-  <title>Alexandr Babushkin - CV</title>
+  <title>Александр Бабушкин - CV</title>
 </head>
 <body>
   <section>    
     <ul class="btn-container"><!-- lang bth begin -->
-      <li><a href="index.html" class="btn btn-primary">Русский</a></li>
-      <li><a href="en_.html" class="btn btn-secondary">English</a></li>
+      <li><a href="index.html" class="btn btn-primary">English</a></li>
+      <li><a href="ru.html" class="btn btn-secondary">Русский</a></li>
     </ul><!-- lang btn end -->    
     <div class="wrapper-row-section"><!-- start wrapper -->
       <div class="item-test-first flex-border"> <!-- foto name social block begin-->
         <div class="fio-wrapper">
-          <img src="img/photo.jpeg" alt="" class="photo">
+          <div class="photo">
+            <img src="img/photo.jpeg" alt="" class="photo">
+          </div>
           <div class="wrapper-name">
             <ul>
-              <li><h1>Александр Бабушкин</h1></li>
-              <li><h2>Web - разработчик</h2></li>
+              <li><h1 class="title-large-first">Aleksandr Babushkin</h1></li>
+              <li><h2 class="title-small">Web-developer</h2></li>
             </ul>
             <div class="social-links-wrapper">
               <a href="https://www.facebook.com/babushkin72">  
@@ -39,183 +40,142 @@
           </div>
         </div>
       </div><!--foto name social block end -->
-      <div class="item-test flex-border"> 
-        <div class="about-wrapper"><!-- about me block begin -->
-          <h2>О себе</h2>
-          <ul>
-            <li>возраст: 28</li>
-            <li>город: Москва, Железнодорожный</li>
-          </ul>
-          <h3>Контакты:</h3>
-          <ul>
-            <li>e-mail: <a href="mailto:alexbub72@dmail.com">alexbub72@gmail.com</a> </li>
-            <li>телефон: <a href="tel:+79323268892">+79323268892</a></li>
-            <li>telegram: <a href="https://t.me/avbabushkin">@avbabushkin</a></li>
-            <li>skype: live:av_babushkin</a></li>
-          </ul>
-        </div><!-- About me block end --> 
-      </div>
+      <div class="item-test flex-border"> <!-- about me block begin -->
+        <div class="about-wrapper">
+          <div>
+            <h1 class="title-large">About me</h1>
+            <ul>
+              <li>age: 28</li>
+              <li>city: Moscow</li>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="title-small">Contacts:</h2>
+            <ul>
+              <li>e-mail: <a href="mailto:alexbub72@dmail.com">alexbub72@gmail.com</a> </li>
+              <li>phone: <a href="tel:+79323268892">+79323268892</a></li>
+              <li>Ссылка: <a href="https://t.me/avbabushkin/">@avbabushkin</a></li>
+            </ul>
+          </div>
+        </div> 
+      </div><!-- About me block end -->
     </div>
     <div class="wrapper-row-section"><!-- next wrapper -->
 
       <div class="item-test flex-border"><!-- skills block begin -->
         <div class="skills-wrapper">
-          <h2>Навыки</h2>
+          <h2 class="title-large">Skills</h2>
           <div class="skills-item-wrapper">
-            
             <div class="skills-item" >Ruby</div>
             <div class="skills-item" >Ruby on Rails</div>
-            
-            <div class="skills-item" >JScript</div>
+            <div class="skills-item" >RSpec</div>
+            <div class="skills-item" >PostgreSQL</div>
+            <div class="skills-item" >Redis</div>
             <div class="skills-item" >HTML</div>
             <div class="skills-item" >SLIM</div>
             <div class="skills-item" >CSS</div>
             <div class="skills-item" >SASS</div>
             <div class="skills-item" >Grid</div>
             <div class="skills-item" >FlexBox</div>
-          
-            <div class="skills-item" >PostgreSQL</div>
-            <div class="skills-item" >Redis</div>
-            
-        
-            <div class="skills-item" >RSpec</div>
-            <div class="skills-item" >FactoryBot</div>
-
-    
-            <div class="skills-item" >Ubuntu</div>
-            
-          
             <div class="skills-item" >Git</div>
+            <div class="skills-item" >Ubuntu</div>
           </div>
           <div class="languages-wrapper">
-            <h2>Языки</h2>
+            <h2 class="title-small">Languages</h2>
             <ul>
-              <li>Русский - родной</li>
-              <li>English - чтение тех. документации</li>
+              <li>Russian - native</li>
+              <li>English -  Intermediate</li>
             </ul>
           </div>
         </div>
       </div><!-- skills block end -->
        <div class="item-test flex-border project-wrapper"> <!-- badprojects begin -->
-        <h2>Проекты</h2>  
-        <ul>
-          <li><a href="https://noaskme.herokuapp.com">Хорошие вопросы (учебный проект)</a></li>
-          <li>Репозиторий проекта: <a href="https://github.com/avbabushkin/askme">GitHub</a></li>
-        </ul>
-        <br>
-        <ul>
-          <li><a href="https://avbabushkin.github.io/surguttehnika/"> СургутТехника</a></li>
-          <li>Сайт для компании по аренде спецтехники</li>
-          <a href="https://stehsteh.herokuapp.com"> СургутТехника (v2)</a></li>
-          <li>Переписываю данный (pet) проект на Rails + React в учебных целях</li>
-          <li>Репозиторий проекта: <a href="https://github.com/avbabushkin/steh">GitHub</a></li>
-        </ul>
-        <br>
-        <ul>
-          <li><a href="dmkservice.ru">dmkservice.ru</a> (сервис прекратил деятельность)</li>
-          <li>Реализованые задачи:</li>
+        <h1 class="title-large">Projects</h1>  
           <ul>
-            <li>- сайт для сервиса заправки картриджей (HTML/CSS/PHP);</li>
-            <li>- продвижение в ТОП выдачи Яндекс/Google по запросу "заправка картриджей в Демьянке".</li>
-          </ul>
+          <li class="title-project">Site for "STEH" company</li>
+          <li>link: <a href="https://avbabushkin.github.io/steh/">STEH</a></li>
+          <li>My current project.</li>
+        </ul>
+        <ul>
+          <li class="title-project">Site for service "dmkservice" - repair toner cartrige</li>
+          <li>link: <a href="">dmkservice.ru</a> (R.I.P.)</li>
         </ul>
       </div><!-- bagprojects bloock-->
     </div>
     <div class="wrapper-row-section"><!-- next wrapper -->
      
       <div class="item-test flex-border work-exp-wrapper" ><!-- job experience block begin -->
-        <h2>Опыт работы</h2>
+        <h2 class="title-large">Experience</h2>
         <ul>
-          <li>ОАО "РЖД" (2013 - 2018)</li>
+          <li class="title-small">OAO "RZD" (2013 - 2018)</li>
+          <!--  <li><strong>Свердловский центр метрологии</strong></li> -->
           <li style="border-bottom: 1px solid #ccc;"></li>
-          <li><strong>Должность:</strong> электромеханик по калибровке и ремонту средств измерений</li>
-          <li><strong>Обязанности: </strong></li>
-          <ul>
-            <li>- метрологический контроль и <br>обслуживание средств измерений</li>
-            <li>- ремонт средств измерений;</li>
-            <li>- учет и регистрация данных об МО (метрологическом обслуживании) средств измерений.</li>
-          </ul>
-          <li><strong>Достижения:</strong></li>
-          <ul>
-            <li>- написал “десктоп-приложение” для учета МО средств измерений (Delphi 2010);</li>
-            <li>- организовал процесс заправки картриджей на предприятии.</li>
-          </ul>
+          <li><strong>position:</strong> electrical enginer</li>
         </ul>
-        <br>
         <ul>
-          <li>ОАО "РЖД" (2012 - 2013)</li>
-          <p style="border-bottom: 1px solid #ccc; margin-bottom: 2px;"></p>
+          <li class="title-small">ОАО "RZD" (2012 - 2013)</li>
           <!-- <li><strong>Свердловск-Сортировочная дистанция СЦБ</strong></li> -->
-          <li><strong>Должность:</strong>  электромехник КТСМ (комплекс технических средств многофункциональный)</li>
-          <li><strong>Обязанности: </strong></li>
-          <ul>
-            <li>- обслуживание оборудования КТСМ;</li>
-            <li>- поддержка работоспособности ПО;</li>
-            <li>- замена и ремонт отдельных узлов комплекса</li>
-          </ul>
+          <p style="border-bottom: 1px solid #ccc; margin-bottom: 2px;"></p>
+          <li><strong>position:</strong> service engineer</li>
         </ul>            
       </div><!-- job experience end-->
       <div class="item-test flex-border"><!-- education block begin -->
         <div class="education-wrapper">
-          <h2>Образование</h2>
+          <h1 class="title-large">Education</h1>
           <div class="education-item">
             <div>2014</div>
             <div>
               <ul>
-                <li>УрТИСИ г. Екатеринбург</li>
-                <li>специальность - программное обеспечение вычислительной техники и автоматизированных систем</li>
-                <li>квалификация - инженер</li>
-                <li><a href="http://www.uisi.ru/">uisi.ru</a></li>
+                <li>Ekaterinburg city</li>
+                <li>SIBERIAN STATE UNIVERSITY OF TELECOMMUNICATIONS AND INFORMATION SCIENCES</li>
+                <li>specialty - computer software and automated systems</li>
+                <li>qualification - software engineer</li>
+                <li>Сайт:<a href="http://www.uisi.ru/">uisi.ru</a></li>
               </ul>
             </div>
           </div>
-          <h2>Дополнительное образование</h2>
+          <h2 class="title-small">additional education</h2>
           <div class="education-item">
             <div>2017</div>
             <div>
               <ul>
-                <li>Онлайн интенсив, Ruby on Rails, Хороший программист</li>
+                <li>Online course, Ruby on Rails, "Good programmer"</li>
                 <li><a href="https://goodprogrammer.ru">goodprogrammer.ru</a></li>
               </ul>
             </div>
           </div>
         </div>
       </div> <!-- education block end-->
-    </div>
+    </div> 
     <div class="wrapper-row-section"><!-- next wrapper -->
       <div class="item-test flex-border work-exp-wrapper" >
-        <h2>Дополнительно</h2>
+        <h1 class="title-large">Common</h1>
         <div>
-          <h3><strong>Еще немного о себе:</strong></h3>
-          <p>
-            Взращиваю в себе полноценного фулстака.  
-          </p>
-          <p>
-            Увлекаюсь баскетболом.
-          </p>
-          <p>
-            Отношение к алкоголю/курению: нейтральное.
-          </p>
-          
-          <h3><strong>Книги:</strong></h3>
+          <h2 class="title-small">A little bit about me yet:</h2>
           <ul>
-            <li><strong>Хел Фултон</strong> - Программирование на языке Ruby (complete 50%)</li>
-            <li><strong>Michael Hartl</strong> - Ruby on Rails Tutorial  (complete 60%)</li>
-            <li><strong>Гради Буч</strong> - Обьектно ориентированный анализ и проектирование (в процессе)</li>
-            <li><strong>Стив Макконнелл</strong> - Совершенный код (в процессе)</li>
-            <li><strong>Alan Beaulie</strong> - Learning SQL (в процессе)</li>
+            <li>no smoke</li>
+            <li>relationship to alcohol - neutral</li>
+            <li>Love basketball</li>
+          </ul>
+          
+          <h2 class="title-small">Books:</h2>
+          <ul>
+            <li>Hal Fulton - The Ruby Way</li>
+            <li>Ruby on Rails Tutorial - by Michael Hartl</li>
+            <li>Steven C. McConnell - Code Complete</li>
+            <li>Grady Booch - Object-Oriented Analysis and Design with Applications</li>
+            <li>Alan Beaulieu - Learning SQL</li>
           </ul>          
         </div>
         <div>
-          <h3><strong>Технологии в процессе изучения:</strong></h3>
+          <h2 class="title-small">Learn now:</h2>
           <ul>
             <li>JavaScript</li>
             <li>React</li>
           </ul>   
         </div>
-
       </div>
-    </div>  
+    </div> 
   </section>
 </body>
 </html>
