@@ -13,6 +13,7 @@ body {
   line-height: 1.5; 
   color: #484848;
   background-color:  #f6f5ed;
+  text-align: justify;
 }
 
 a {
@@ -45,6 +46,15 @@ h3 {
   font-size: 20px;
   font-weight: 400;
   /*border-bottom: 1px solid #484848;*/
+}
+
+hr {
+  border-top: 1px solid #ccc;
+  border-bottom: 0px solid #484848;
+}
+
+span.overline {
+  text-decoration: line-through;
 }
 
 /*Button style*/
@@ -85,7 +95,6 @@ h3 {
   display: flex;
   margin-top: 10px;
   max-width: 100%;
-  flex-wrap: wrap;
 }
 
 .sp-between {
@@ -94,6 +103,8 @@ h3 {
 }
 
 .first-col {
+  padding-right: 40px;
+  padding-bottom: 20px;
 }
 
 .second-col {
@@ -139,8 +150,8 @@ h3 {
 }
 
 .skills-item {  
-  padding: 0px 40px 30px 0px;  
-  width: 300px;
+  padding: 0px 50px 30px 0px;  
+  width: 250px;
 }
 
 .skills-item h3 {
@@ -185,7 +196,23 @@ footer {
 
 /*Media styles*/
 
-@media (max-width: 1000px) {
+@media (min-width: 320px) and (max-width: 480px) {
+
+.lang-btn {
+  margin: -10px 3px 3px 3px;
+  padding: 10px 5px 5px 5px;
+  border: 1px solid #484848;
+  border-radius: 10px;
+  width: 300px;
+  background-color: #f6f5ed; 
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.container {
+  margin: auto;
+  max-width: 75%;
+}
 
 h1{
   font-size: 40px;
