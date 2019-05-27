@@ -96,8 +96,12 @@ span.overline {
   max-width: 100%;
 }
 
-.item-margin {
-  margin-top: 40px;
+.item-pb {
+  padding-bottom: 20px;
+}
+
+.item-mt {
+  margin-top: 30px;
 }
 
 .sp-between {
@@ -126,7 +130,7 @@ span.overline {
 }
 
 .skills-item {  
-  padding: 0px 50px 30px 0px;  
+  padding: 0px 50px 0px 0px;  
   width: 250px;
 }
 
@@ -139,28 +143,44 @@ span.overline {
   font-size: 0.8em;
 }
 
+.skills-pb {
+  padding-bottom: 20px;
+}
+
+/*badprojects block*/
+
+.projects-wrapper {
+}
+
+.item-projects-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item-projects {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 250px;
+}
+
 .edu-describe {
-  margin-top: 20px;
+  /*margin-top: 20px;*/
+  width: 400px;
+  padding-right: 30px;
+  padding-bottom: 30px;
 }
 
 .edu-describe p {
   font-size: 0.8em;
 }
 
-/*badprojects block*/
-
-.project-wrapper {
-  width: 40%;
-  flex-direction: column;
-}
-
-.project-wrapper a {
-  text-decoration: underline;
-  font-weight: 700;
+.edu-describe-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .other p {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 footer {
@@ -220,7 +240,7 @@ h3 {
   flex-direction: column;
 }
 
-.item-margin {
+.item-mt {
   margin-top: 100px;
 }
 
@@ -235,7 +255,6 @@ h3 {
   display: flex;
   flex-direction: column;
 }
-
 
 .photo {
   margin: auto;
@@ -256,6 +275,28 @@ h3 {
 .skills-item {
   width: 100%;  
 }
+
 .skills-item p {  
   font-size: 0.8em;
+}
+
+.skills-pb {  
+  padding-bottom: 30px;
+}
+
+/* Projects */
+
+.item-projects {
+  padding-right: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+}
+
+.edu-describe {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.edu-describe-pb {
+  padding-bottom: 30px;
 }
