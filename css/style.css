@@ -56,6 +56,7 @@ span.overline {
   text-decoration: line-through;
 }
 
+
 /*Button style*/
 .lang-btn-wrapper {
   display: flex;
@@ -85,14 +86,13 @@ span.overline {
 
 .container {
   margin: auto;
-  max-width: 65%;
+  max-width: 63%;
 }
 
 /* block */
 
 .item-container {
   display: flex;
-  margin-top: 20px;
   max-width: 100%;
 }
 
@@ -100,12 +100,16 @@ span.overline {
   padding-bottom: 20px;
 }
 
-.item-mt {
-  margin-top: 30px;
+.item-container-mt {
+  margin-top: 50px;
 }
 
 .sp-between {
   justify-content: space-between; 
+}
+
+.flex-start {
+  justify-content: flex-start; 
 }
 
 .first-col {
@@ -114,7 +118,7 @@ span.overline {
 }
 
 .second-col {
-  min-width: 250px;
+  min-width: 270px;
 }
 
 .photo {
@@ -123,6 +127,18 @@ span.overline {
 }
 
 /* TODO Social links */
+
+.social-wrapper { 
+  font-size: 0.8em;
+}
+
+.social-wrapper a {
+  padding-top: 10px;
+  padding-right: 30px;
+  color: #989890;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+} 
 
 .skills-wrapper {
   display: flex;
@@ -158,16 +174,16 @@ span.overline {
 }
 
 .item-projects {
-  padding-right: 30px;
-  padding-bottom: 30px;
-  width: 250px;
+  padding-right: 15px;
+  /*padding-bottom: 30px;*/
+  width: 260px;
 }
 
 .edu-describe {
   /*margin-top: 20px;*/
   width: 400px;
   padding-right: 30px;
-  padding-bottom: 30px;
+  /*padding-bottom: 30px;*/
 }
 
 .edu-describe p {
@@ -217,6 +233,7 @@ h3 {
   /*border-bottom: 1px solid #484848;*/
 }
 
+
 .lang-btn {
   margin: -10px 3px 3px 3px;
   padding: 10px 5px 20px 5px;
@@ -240,7 +257,7 @@ h3 {
   flex-direction: column;
 }
 
-.item-mt {
+.item-container-mt {
   margin-top: 100px;
 }
 
@@ -263,6 +280,19 @@ h3 {
 
 
 /* TODO Social links */
+
+.social-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} 
+
+.social-wrapper a {
+  padding: 20px 15px 5px 15px;
+  color: #989890;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+} 
 
 /* Skills */
 
@@ -288,8 +318,11 @@ h3 {
 
 .item-projects {
   padding-right: 30px;
-  padding-bottom: 30px;
   width: 100%;
+}
+
+.item-pb-xs {
+  padding-bottom: 30px;
 }
 
 .edu-describe {
