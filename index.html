@@ -9,15 +9,11 @@
 </head>
 <body>
   <div class="container"> <!-- MAIN CONTAINER -->
-    <div class="lang-btn-wrapper">
-      <div class="lang-btn">
-        <a href="index.html">English</a></li>
+      <div class="lang">
+        <a href="index.html">English</a>
+        |          
+        <a href="ru.html">Русский</a>  
       </div>
-      <div class="lang-btn">
-        <a href="ru.html">Русский</a></li>
-      </div>
-    </div>
-    
     <div class="item-container sp-between item-pb"> <!-- foto name social block begin-->
       <div class="first-col first-col-xs">
         <ul>
@@ -188,5 +184,27 @@
       </div>
       </div>
   </footer>
+
+  <script>
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+  </script>
 </body>
 </html>

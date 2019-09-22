@@ -57,39 +57,23 @@ span.overline {
 }
 
 
-/* Language buttons style */
-
-.lang-btn-wrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.lang-btn {
-  margin: -10px 3px 3px 3px;
-  padding: 10px 0px 5px 0px;
-  border: 1px solid transparent;
-  border-radius: 10px;
-  min-width: 100px;
-  background-color: #f6f5ed; 
-  text-align: center;
-  transition: background-color 0.2s;
-}
-
-.lang-btn:hover {
-  background-color: #484848; 
-}
-
-.lang-btn a {
-  color: #C30C0C;
-}
-
-/* main container */
 
 .container {
   margin: auto;
   max-width: 63%;
 }
+/* Language buttons style */
 
+/* TODO Dropdown Lang */
+
+/* main container */
+
+.lang {
+  margin: 0 auto;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  width: 200px;
+}
 /* block */
 
 .item-container {
