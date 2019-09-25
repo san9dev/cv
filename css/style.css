@@ -69,10 +69,8 @@ span.overline {
 /* main container */
 
 .lang {
-  margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 50px;
-  width: 200px;
+  display: flex;
+  justify-content: center;
 }
 /* block */
 
