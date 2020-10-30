@@ -9,8 +9,8 @@
 }
 
 body {
-  font-size: 1.1em; 
-  line-height: 1.5; 
+  font-size: 1.1em;
+  line-height: 1.5;
   color: #484848;
   background-color:  #f6f5ed;
 }
@@ -20,14 +20,14 @@ a {
   color: #C30C0C;
 }
 
-ul {  
+ul {
   margin-top: 0px;
 }
 
 li {
   margin: 0;
   padding: 0;
-  list-style-type: none; 
+  list-style-type: none;
 }
 
 h1{
@@ -60,7 +60,7 @@ span.overline {
 
 .container {
   margin: auto;
-  max-width: 63%;
+  max-width: 45%;
 }
 /* Language buttons style */
 
@@ -70,7 +70,13 @@ span.overline {
 
 .lang {
   display: flex;
+  padding-top: 13px;
+  padding-bottom: 50px;
   justify-content: center;
+}
+
+.lang a {
+  padding: 0px 10px;
 }
 /* block */
 
@@ -88,11 +94,11 @@ span.overline {
 }
 
 .sp-between {
-  justify-content: space-between; 
+  justify-content: space-between;
 }
 
 .flex-start {
-  justify-content: flex-start; 
+  justify-content: flex-start;
 }
 
 .first-col {
@@ -106,7 +112,7 @@ span.overline {
 
 .photo {
   height: 150px;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 .position {
@@ -115,7 +121,7 @@ span.overline {
 
 /* TODO Social links */
 
-.social-wrapper { 
+.social-wrapper {
   font-size: 0.8em;
 }
 
@@ -125,15 +131,15 @@ span.overline {
   color: #989890;
   text-decoration: underline;
   text-decoration-style: dotted;
-} 
+}
 
 .skills-wrapper {
   display: flex;
   flex-wrap: wrap;
 }
 
-.skills-item {  
-  padding: 0px 50px 0px 0px;  
+.skills-item {
+  padding: 0px 50px 0px 0px;
   width: 230px;
 }
 
@@ -141,8 +147,8 @@ span.overline {
   border-bottom: 1px solid #ccc;
 }
 
-.skills-item p { 
-  color: #989890; 
+.skills-item p {
+  color: #989890;
   font-size: 0.8em;
 }
 
@@ -200,7 +206,7 @@ footer {
 @media (min-width: 480px) and (max-width: 1000px) {
 
 body {
-  font-size: 3em; 
+  font-size: 3em;
 }
 
 h1{
@@ -228,7 +234,7 @@ h3 {
   border-radius: 10px;
   width: 400px;
   font-size: 1.4em;
-  background-color: #f6f5ed; 
+  background-color: #f6f5ed;
   text-align: center;
   transition: background-color 0.1s;
 }
@@ -272,14 +278,14 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-} 
+}
 
 .social-wrapper a {
   padding: 20px 15px 5px 15px;
   color: #989890;
   text-decoration: underline;
   text-decoration-style: dotted;
-} 
+}
 
 /* Skills */
 
@@ -290,14 +296,14 @@ h3 {
 }
 
 .skills-item {
-  width: 100%;  
+  width: 100%;
 }
 
-.skills-item p {  
+.skills-item p {
   font-size: 0.8em;
 }
 
-.skills-pb {  
+.skills-pb {
   padding-bottom: 30px;
 }
 
