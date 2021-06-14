@@ -13,6 +13,7 @@ body {
   line-height: 1.5;
   color: #484848;
   background-color:  #f6f5ed;
+  padding-top: 200px;
 }
 
 a {
@@ -83,6 +84,8 @@ span.overline {
 .item-container {
   display: flex;
   max-width: 100%;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .item-pb {
@@ -97,13 +100,10 @@ span.overline {
   justify-content: space-between;
 }
 
-.flex-start {
-  justify-content: flex-start;
-}
-
 .first-col {
   margin-bottom: 10px;
   padding-right: 40px;
+  width: 600px;
 }
 
 .second-col {
@@ -119,15 +119,12 @@ span.overline {
   color: #C30C0C;
 }
 
-/* TODO Social links */
-
-.social-wrapper {
-  font-size: 0.8em;
-}
+/* Social links */
 
 .social-wrapper a {
-  padding-top: 10px;
-  padding-right: 30px;
+  font-size: 0.8em;
+  margin-top: 50px;
+  padding: 10px;
   color: #989890;
   text-decoration: underline;
   text-decoration-style: dotted;
